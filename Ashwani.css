@@ -240,11 +240,19 @@ div{
     transition-timing-function: steps(3);
     transition-delay: 1s; */
     transform: rotate(45deg);
-    transform: scale(1.5);
+    transform: scale(1,1.5);
+    transform: translate(200px);
+    transform: skew(45deg);
 }
 
+@keyframes coloranimate{
+    from{ background-color: antiquewhite;}
+    to{background-color: blueviolet;}
+}
 div:hover{
     background-color: red;
     color: aliceblue;
     font-size: large;
+    transform: scale(1,1.5);
 }
+
