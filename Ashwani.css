@@ -1,0 +1,250 @@
+ 
+ /*
+ /* *{universal selecter//also css mai bad wali property apply hoti
+    color: aliceblue;
+ } */
+
+ /* mdn a good resource for css */
+ /* h1{
+color: brown;
+text-decoration: solid;
+text-decoration: red wavy underline;
+}
+p{
+    color: rgb(62, 62, 205);
+}
+button{
+    color: rgb(0, 0, 0);
+    background-color: azure;
+    text-align: center;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+/* 00-ff==0-255 */
+
+/* #headingone{
+    color: #9c1e1e;
+}
+.waiter{
+    color: #0a2faa;
+} */
+/* #nara{
+    background-color: antiquewhite;
+    color: #9c1e1e;
+}
+p{
+    text-align: center;
+}
+#align{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+}
+#h1{
+    font-weight: normal; */
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* 100 se 900 range bold==400 *
+    width: 200px;
+    background-color: antiquewhite;
+}
+#one{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* #paraone{
+    font-size: 25px;
+    line-height: 20px;
+    text-transform: capitalize;  /*matlb sabka 1st word capital *
+} */
+
+/* units in css -pixels.....1 inch=96px 
+ek aur concept is border width,shape,colur,*/
+/*#div1{
+    height: 50px;
+    background-color: chocolate;
+    border: 2px dotted rgb(211, 44, 44);
+    border-radius: 20px;
+    padding-left: 20px;
+    /* top right bootm left /
+    margin-top: 40px;
+}*/
+
+/* $$$$$$$$yaha se next level start karenge gaaizz */
+/* *{
+    padding: 0;
+    margin: 0;
+    color: wheat;
+
+    text-decoration: none;
+}
+div{
+    background-color: black;
+    color: white;
+    border: 20px solid white;
+}
+button{
+ background-color: yellow;
+}
+a{
+    margin-right: 200px;
+}
+$$$$$$$$$done hua; */
+
+/* div{
+    background-color: pink;
+    display:inline;
+}
+button{
+    display: block;
+} */
+
+/* div{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    display: inline-block;
+} */
+/* kisi bhi element ko yadi display none diya to uski visibility + jagah dono 
+none ho jayenge and visibility :hidden kiya to jagh hogi but dikhega nahi 
+ek rgba bhi hota hai jisme rgb to hota hai a opacity deta hai 0-1 value ke sath*/
+
+/* ab fixed static ye sabka$$$$$ */
+
+/* div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: inline-block;
+
+} */
+/*body{
+    background-image: url("TOTA.jpg.jpg");
+    background-size: cover;
+}*/
+/* #box1{ */
+    /* position: static; */
+    /* background-image: url("TOTA.jpg.jpg");
+    background-size: cover; */
+
+  /*  top: 50px;*/
+
+/* }
+#box2{ */
+    /* position: relative; */
+    /* background-image: url("bagh.jpg.jpg");
+    background-size: cover; */
+  /*  top: 20px;*/
+    /* apni original position se shift ho jayega */
+/* }
+
+#box3{ */
+    /* position: absolute; */
+    /* background-image: url("lomdi.jpg.jpg");
+    background-size: cover; */
+    /* absolute matlb closest ancestor ke relative */
+ /*   top:10px;*/
+/* }
+
+#box4{ */
+    /* position: fixed; */
+    /* background-image: url("kachua.jpg.jpg");
+    background-size: cover; */
+    /*right: 10px;*/
+/* } */
+/* ye browser ke relative ke liye...footer header banane ke kam aata h 
+ek aur hai sticky vo aisa hai ki ek jagh pe fixed dikhega browser mai 
+but tb jb scrollkrte hue uskiposition mai aaye
+also ek hai z index ; z-index:number ...so jiska bada hoga no. vo overlap krega
+$$$$$$ab yadi background image deni h to
+static se poora dibba cover no empty space
+contain se image acchi dikhegi but empty space dikhega
+auto mai by default hota hai
+
+
+######flexbox:)*/
+/* body{
+    text-align: center;
+}
+
+div{
+    height: 100px;
+    width: 200px;
+    border: 2px solid black;
+    display: inline-block;
+
+}
+#container{
+    width: 600px;
+    height: 300px;
+    display:flex;
+     flex-direction: row; element left seright arrange ho gye .....1-4 */
+     /* justify-content: center;
+     align-items: flex-start; */
+     /* flex-wrap: wrap; */
+     /* align-items: center;
+     align-content: center; 
+     align item cross axis ke along, justify content main*/
+
+/* }
+
+#box1{
+    background-color: yellow;
+}
+
+
+
+#box2{
+    background-color: rgb(25, 123, 57);
+    height: 200px;
+    flex-shrink: 0.5; */
+    /* align-self: flex-end; */
+/* }
+
+
+#box3{
+    background-color: rgb(227, 167, 46);
+}
+
+
+#box4{
+    background-color: rgb(50, 91, 205);
+}
+
+#box5{
+    background-color: rgb(57, 209, 108);
+} */
+
+/* ek aur hai ki media use karke responsive bana skte hain....like */
+/* @media(min-width:600px) and (max-width:200px)  {
+    div{
+        background-color: red;
+    }
+    
+} */
+
+/* $$$$$$$$$$$$sabse fodu concept last level-**transitions */
+
+/* shorthand- transition:property name duration timing function delay */
+div{
+    height: 100px;
+    width: 100px;
+    background-color: turquoise;
+    border: 2px solid black;
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: steps(3);
+    transition-delay: 1s; */
+    transform: rotate(45deg);
+    transform: scale(1.5);
+}
+
+div:hover{
+    background-color: red;
+    color: aliceblue;
+    font-size: large;
+}
