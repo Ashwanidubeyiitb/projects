@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rps</title>
+</head>
+<body>
+    <p>Rock paper scissors</p>
+    <button onclick="playGame('rock')">Rock</button>
+    <button onclick="playGame('paper')">Paper</button>
+    <button onclick="playGame('scissor')">Scissor</button>
+    
+    <script>
+        function playGame(userMove) {
+            let compMove = pickCompMove();
+            let result = '';
+
+            if (compMove === userMove) {
+                result = 'tie';
+            } else if (
+                (compMove === 'rock' && userMove === 'scissor') ||
+                (compMove === 'paper' && userMove === 'rock') ||
+                (compMove === 'scissor' && userMove === 'paper')
+            ) {
+                result = 'lose';
+            } else {
+                result = 'win';
+            }
+
+            alert(`You chose ${userMove}. Computer picked ${compMove}. You ${result}.`);
+        }
+        
+        function pickCompMove() {
+            let compMove = '';
+            const randomNum = Math.random();
+
+            if (randomNum >= 0 && randomNum < 1/3) {
+                compMove = 'rock';
+            } else if (randomNum >= 1/3 && randomNum < 2/3) {
+                compMove = 'paper';
+            } else {
+                compMove = 'scissor';
+            }
+
+            return compMove;
+        }
+    </script>
+</body>
+</html>
